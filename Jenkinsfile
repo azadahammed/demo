@@ -15,7 +15,6 @@ pipeline {
         stage('Neo') { 
           steps {
                 sh "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64"
-                sh " /etc/profile"
                 sh "echo $JAVA_HOME"
                 sh "/home/ubuntu/neo/tools/neo.sh"
             }
