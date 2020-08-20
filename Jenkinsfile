@@ -14,7 +14,6 @@ pipeline {
         }
         stage('Neo') { 
           steps {
-                sh " $JAVA_HOME"
                 sh "/home/ubuntu/neo/tools/neo.sh"
             }
         }
