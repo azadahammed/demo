@@ -14,6 +14,7 @@ pipeline {
         }
         stage('Neo') { 
           steps {
+                sh "export JAVA_HOME=$(readlink -ze /usr/bin/javac | xargs -0 dirname -z | xargs -0 dirname)"
                 sh "/home/ubuntu/neo/tools/neo.sh"
             }
         }
