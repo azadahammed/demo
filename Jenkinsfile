@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Push') { 
           steps {
-                sh "cp /var/lib/jenkins/workspace/sap-maven/target/sparkjava-hello-world-1.0.war  /home/ubuntu/new/"
+                sh "cp /var/lib/jenkins/workspace/sap-maven/target/java-tomcat-maven-example.war  /var/lib/tomcat8/webapps/"
             }
         }
     }
