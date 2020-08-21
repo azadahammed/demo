@@ -19,7 +19,7 @@ pipeline {
         }
           stage('Neo undeploy') {
           steps {
-              
+                 sh "/home/ubuntu/neo/tools/neo.sh  stop  --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp"
                 sh "/home/ubuntu/neo/tools/neo.sh  undeploy  --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp"
           }
         }
