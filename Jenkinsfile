@@ -20,7 +20,7 @@ pipeline {
         stage('Neo Delete') { 
           steps {
                
-                sh "/home/ubuntu/neo/tools/neo.sh  delete  --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp"
+                sh "/home/ubuntu/neo/tools/neo.sh  delete-vm  --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp"
           }
         }
          stage('Neo Deploy') { 
