@@ -20,7 +20,7 @@ pipeline {
          stage('Neo Deploy') { 
           steps {
                 sh "/home/ubuntu/neo/tools/neo.sh  deploy  --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp --source  /var/lib/jenkins/workspace/sap-maven/target/java-tomcat-maven-example.war "
-                sh "/path/to/neo start --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp"
+                sh "/home/ubuntu/neo/tools/neo.sh --host https://hanatrial.ondemand.com --account  p2002559018trial --user P2002559018 -p aravind@SAP7717 --application firstapp"
           }
         }
     }
