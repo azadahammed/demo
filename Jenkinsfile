@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Neo') { 
           steps {
-                sh "/home/ubuntu/neo/tools/neo.sh"
+                sh "/home/ubuntu/neo/tools/neo.sh  list-runtimes -h https://hanatrial.ondemand.com -a p2002559018trial -u P2002559018 -p aravind@SAP7717 "
             }
         }
     }
